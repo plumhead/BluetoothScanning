@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BluetoothBarcodeScanning" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WGF-K2-TYX">
+                                <rect key="frame" x="20" y="28" width="560" height="436"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8I-VW-CUA">
+                                <rect key="frame" x="283" y="509" width="34" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="toggleStopStartScan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l6e-e0-4It"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="not running" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d21-0i-kog">
+                                <rect key="frame" x="20" y="484" width="560" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="d21-0i-kog" secondAttribute="trailing" id="FMf-IY-7CG"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="d21-0i-kog" secondAttribute="leading" id="FRr-ki-t93"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WGF-K2-TYX" secondAttribute="bottom" constant="136" id="U9J-ff-jhd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WGF-K2-TYX" secondAttribute="trailing" id="Zb1-ww-NjU"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="WGF-K2-TYX" secondAttribute="leading" id="dQs-k0-kEp"/>
+                            <constraint firstItem="d21-0i-kog" firstAttribute="top" secondItem="WGF-K2-TYX" secondAttribute="bottom" constant="20" id="f7R-UA-l4C"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="W8I-VW-CUA" secondAttribute="bottom" constant="61" id="rDP-e8-ZIW"/>
+                            <constraint firstItem="WGF-K2-TYX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="w31-DV-5nv"/>
+                            <constraint firstItem="W8I-VW-CUA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ySA-ga-CPc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scanLabel" destination="WGF-K2-TYX" id="CKp-ff-My6"/>
+                        <outlet property="scanStopStart" destination="W8I-VW-CUA" id="I7D-8F-2gY"/>
+                        <outlet property="statusLabel" destination="d21-0i-kog" id="bcK-d4-07B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="369" y="1030"/>
+        </scene>
+    </scenes>
+</document>
