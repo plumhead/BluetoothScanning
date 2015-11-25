@@ -8,22 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		D7D286B71C04568700601B9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D286B61C04568700601B9E /* AppDelegate.swift */; };
-		D7D286B91C04568700601B9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D286B81C04568700601B9E /* ViewController.swift */; };
+		D7D286B91C04568700601B9E /* BTPeripheralController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D286B81C04568700601B9E /* BTPeripheralController.swift */; };
 		D7D286BC1C04568700601B9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7D286BA1C04568700601B9E /* Main.storyboard */; };
 		D7D286BE1C04568700601B9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7D286BD1C04568700601B9E /* Assets.xcassets */; };
 		D7D286C11C04568700601B9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7D286BF1C04568700601B9E /* LaunchScreen.storyboard */; };
-		D7D286C91C045D7400601B9E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D286C81C045D7400601B9E /* AVFoundation.framework */; };
+		D7D286CB1C04682900601B9E /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D286CA1C04682900601B9E /* CoreBluetooth.framework */; };
+		D7D286CD1C04683B00601B9E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D286CC1C04683B00601B9E /* QuartzCore.framework */; };
+		D7D286D31C0483F000601B9E /* SelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D286D21C0483F000601B9E /* SelectionController.swift */; };
+		D7D286D51C04853500601B9E /* BTCentralController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D286D41C04853500601B9E /* BTCentralController.swift */; };
+		D7D286D91C04AC5D00601B9E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D286D81C04AC5D00601B9E /* UIKit.framework */; };
+		D7D286DB1C04AC6600601B9E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D286DA1C04AC6600601B9E /* CoreGraphics.framework */; };
+		D7D286DD1C04B82900601B9E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D286DC1C04B82900601B9E /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D7D286B31C04568700601B9E /* BluetoothBarcodeScanning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluetoothBarcodeScanning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7D286B61C04568700601B9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D7D286B81C04568700601B9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D7D286B81C04568700601B9E /* BTPeripheralController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTPeripheralController.swift; sourceTree = "<group>"; };
 		D7D286BB1C04568700601B9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D7D286BD1C04568700601B9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7D286C01C04568700601B9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7D286C21C04568700601B9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D7D286C81C045D7400601B9E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D7D286CA1C04682900601B9E /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		D7D286CC1C04683B00601B9E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D7D286D21C0483F000601B9E /* SelectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionController.swift; sourceTree = "<group>"; };
+		D7D286D41C04853500601B9E /* BTCentralController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTCentralController.swift; sourceTree = "<group>"; };
+		D7D286D81C04AC5D00601B9E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D7D286DA1C04AC6600601B9E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D7D286DC1C04B82900601B9E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,7 +43,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7D286C91C045D7400601B9E /* AVFoundation.framework in Frameworks */,
+				D7D286DD1C04B82900601B9E /* AVFoundation.framework in Frameworks */,
+				D7D286DB1C04AC6600601B9E /* CoreGraphics.framework in Frameworks */,
+				D7D286D91C04AC5D00601B9E /* UIKit.framework in Frameworks */,
+				D7D286CD1C04683B00601B9E /* QuartzCore.framework in Frameworks */,
+				D7D286CB1C04682900601B9E /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,7 +57,11 @@
 		D7D286AA1C04568600601B9E = {
 			isa = PBXGroup;
 			children = (
-				D7D286C81C045D7400601B9E /* AVFoundation.framework */,
+				D7D286DC1C04B82900601B9E /* AVFoundation.framework */,
+				D7D286DA1C04AC6600601B9E /* CoreGraphics.framework */,
+				D7D286D81C04AC5D00601B9E /* UIKit.framework */,
+				D7D286CC1C04683B00601B9E /* QuartzCore.framework */,
+				D7D286CA1C04682900601B9E /* CoreBluetooth.framework */,
 				D7D286B51C04568700601B9E /* BluetoothBarcodeScanning */,
 				D7D286B41C04568700601B9E /* Products */,
 			);
@@ -59,11 +79,13 @@
 			isa = PBXGroup;
 			children = (
 				D7D286B61C04568700601B9E /* AppDelegate.swift */,
-				D7D286B81C04568700601B9E /* ViewController.swift */,
+				D7D286B81C04568700601B9E /* BTPeripheralController.swift */,
 				D7D286BA1C04568700601B9E /* Main.storyboard */,
 				D7D286BD1C04568700601B9E /* Assets.xcassets */,
 				D7D286BF1C04568700601B9E /* LaunchScreen.storyboard */,
 				D7D286C21C04568700601B9E /* Info.plist */,
+				D7D286D21C0483F000601B9E /* SelectionController.swift */,
+				D7D286D41C04853500601B9E /* BTCentralController.swift */,
 			);
 			path = BluetoothBarcodeScanning;
 			sourceTree = "<group>";
@@ -139,7 +161,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7D286B91C04568700601B9E /* ViewController.swift in Sources */,
+				D7D286B91C04568700601B9E /* BTPeripheralController.swift in Sources */,
+				D7D286D31C0483F000601B9E /* SelectionController.swift in Sources */,
+				D7D286D51C04853500601B9E /* BTCentralController.swift in Sources */,
 				D7D286B71C04568700601B9E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
